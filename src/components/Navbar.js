@@ -1,33 +1,27 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../images/logo.png';
+import logo from '../assets/planet.png';
+import './stylesheets/Navbar.css';
 
-const Navbar = () => (
-  <nav className="navbar navbar-expand-sm navbar-light">
-    <div className="container-fluid ">
-      <span className="navbar-brand ">
-        <img src={logo} alt="logo" width="70px" height="70px" />
-        {' '}
-        Space Traveller Hub
-      </span>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <NavLink className="nav-link" activeclassname="selected" to="/">Rockets</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" activeclassname="selected" to="/missions">Missions</NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" activeclassname="selected" to="/myprofile">My Profile</NavLink>
-          </li>
-        </ul>
-      </div>
+const navLinkStyles = ({ isActive }) => ({
+  fontWeight: isActive ? 'bold' : 'normal',
+  textDecoration: isActive ? 'underline' : 'none',
+});
+
+const Header = () => (
+  <header>
+    <div className="logo">
+      <img className="space-logo" src={logo} alt="logo" />
+      <span className="title-logo">Space Travelers&apos;  Hub</span>
     </div>
-  </nav>
+    <nav>
+      <ul>
+        <NavLink to="/" style={navLinkStyles}><span className="rockets">Rockets</span></NavLink>
+        <NavLink to="missions" style={navLinkStyles}><span className="missions">Missions</span></NavLink>
+        <NavLink to="myprofile" style={navLinkStyles}><span className="myprofile">My Profile</span></NavLink>
+      </ul>
+    </nav>
+  </header>
 );
 
-export default Navbar;
+export default Header;
