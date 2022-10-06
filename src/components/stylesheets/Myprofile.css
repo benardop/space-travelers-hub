@@ -1,0 +1,123 @@
+@import '../../App.css';
+
+.tableContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "missions rockets";
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  background-color: var(--color-white);
+}
+
+.missions {
+  grid-area: missions;
+}
+
+.rockets {
+  grid-area: rockets;
+}
+
+h1 {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.listBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 0.25rem;
+  width: 90%;
+}
+
+.listName {
+  font-size: 1rem;
+}
+
+.remBtn {
+  background-color: var(--color-white);
+  color: #6d757d;
+  border: 1px solid #6d757d;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.remBtn:hover {
+  background-color: var(--color-greenishblue);
+  color: var(--color-white);
+}
+
+.readMore {
+  background-color: var(--color-white);
+  color: #6d757d;
+  border: 1px solid #6d757d;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.readMore:hover {
+  background-color: var(--color-greenishblue);
+  color: var(--color-white);
+}
+
+.readMore a {
+  text-decoration: none;
+  color: grey;
+}
+
+.readMore a:hover {
+  background-color: var(--color-greenishblue);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .itemsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+  }
+
+  .listName {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .remBtn {
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+
+  .readMore {
+    font-size: 1rem;
+  }
+}
