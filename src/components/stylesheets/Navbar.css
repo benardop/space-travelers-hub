@@ -1,0 +1,79 @@
+@import '../../App.css';
+
+header {
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px, rgba(0, 0, 0, 0.07) 0 2px 4px, rgba(0, 0, 0, 0.07) 0 4px 8px, rgba(0, 0, 0, 0.07) 0 8px 16px, rgba(0, 0, 0, 0.07) 0 16px 32px, rgba(0, 0, 0, 0.07) 0 32px 64px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--color-white);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 2rem;
+  justify-content: space-around;
+}
+
+.space-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 2rem;
+}
+
+span {
+  padding: 0 10px;
+  display: block;
+  cursor: pointer;
+  color: var(--color-blue);
+  font-size: 1rem;
+}
+
+.myprofile {
+  border-left: 2px solid black;
+}
+
+.title-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 55px;
+    justify-content: space-between;
+  }
+
+  .space-logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .title-logo {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 1.25rem;
+  }
+}
