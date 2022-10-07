@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --color-black: #212529;
+  --color-blue: #157af6;
+  --color-greenishblue: #42a2b9;
+  --color-white: #fff;
+}
+
 .App {
-  text-align: center;
+  margin: 8rem 0 5rem 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-  padding: 1% 5%;
-}
-
-.contents {
-  padding: 1% 6%;
+html {
+  scroll-behavior: smooth;
 }
