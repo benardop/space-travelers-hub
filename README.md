@@ -38,6 +38,11 @@ npm run start
 - Twitter: [@Bepacho](https://twitter.com/Bepacho)
 - LinkedIn: [Benard Pacho](https://www.linkedin.com/in/ochieng-benard-8264b815/)
 
+👤 **Mirwais Farahi**
+
+- GitHub: [@githubhandle](https://github.com/mirwaisfarahi)
+- Twitter: [@twitterhandle](https://twitter.com/farahi92)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
