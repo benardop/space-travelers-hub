@@ -11,7 +11,7 @@ Space Traveler's Hub is a project to build web application for a company that pr
 - Linters
 
 ## Live Demo
-[Live Demo Link](Coming Soon)
+[Live Demo Link](Coming Soon after review)
 
 
 Please get your browser update.

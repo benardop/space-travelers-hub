@@ -8,7 +8,7 @@ import Missions from '../Missions';
 import store from '../../../redux/configureStore';
 import App from '../../../App';
 
-// getting the missions snapshots
+// missions snapshots
 const MockMissions = () => (
   <Provider store={store}>
     <Missions />
@@ -22,7 +22,7 @@ it('matches snapshot', () => {
   expect(tree).toMatchSnapshot();
 });
 
-// testing missions link from the app section
+// test missions link from the app section
 const MockApp = () => (
   <Provider store={store}>
     <BrowserRouter>

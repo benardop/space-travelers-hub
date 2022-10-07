@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="rocketCard"
+>
+  <img
+    alt=""
+    className="rocketImg"
+    src="https://imgur.com/DaCfMsj.jpg"
+    srcSet=""
+  />
+  <div
+    className="rocketDesc"
+  >
+    <h1
+      className="titleDesc"
+    >
+      Falcon 1
+    </h1>
+    <p
+      className="paraDesc"
+    >
+      <span
+        className="rocketReserved"
+      >
+        Reserved
+      </span>
+      The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.
+    </p>
+    <button
+      className="cancelBtn"
+      id="falcon1"
+      onClick={[Function]}
+      type="button"
+    >
+      Cancel Reservation
+    </button>
+  </div>
+</section>
+`;

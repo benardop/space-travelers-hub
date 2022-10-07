@@ -28,7 +28,7 @@ test('renders data in the card as from API', () => {
   expect(tree).toMatchSnapshot();
 });
 
-// test button change text
+// check button change text
 describe('when you click button it should change to leave mission', () => {
   it('should render missions page content', () => {
     render(
